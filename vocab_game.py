@@ -59,7 +59,7 @@ def show_result_dialog(ans1, ans2):
         st.error(f"❌ ข้อ 3 ยังไม่ถูกต้อง (คุณตอบ '{u_ans3}')")
 
     # ตรวจข้อ 4
-    if u_ans3 == "Books":
+    if u_ans4 == "Books":
         st.success("✅ ข้อ 4: ถูกต้อง")
         score += 1
     else:
@@ -111,8 +111,8 @@ ans4 = st.text_input(
 # อัปเดตค่าล่าสุดเข้าตัวแปร
 st.session_state.ans1_val = ans1
 st.session_state.ans2_val = ans2
-st.session_state.ans1_val = ans3
-st.session_state.ans2_val = ans4
+st.session_state.ans3_val = ans3
+st.session_state.ans4_val = ans4
 
 
 # 4. ปุ่มส่งคำตอบ
